@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec585d8d4ecb7648808d05a33908a72, type: 3}
+  m_Name: EnemyBossWaveConfig
+  m_EditorClassIdentifier: 
+  enemies:
+  - enemyPrefab: {fileID: 8916738310988007191, guid: 62154be85d2057c46a23b0ee4e150452, type: 3}
+    spawnReferencePosition: {x: 0, y: 6, z: 0}
+    useSpecificXPosition: 0
+    config: {fileID: 11400000, guid: a09bdc5d35bca844ba9296c40315309b, type: 2}
+  cadence: 0

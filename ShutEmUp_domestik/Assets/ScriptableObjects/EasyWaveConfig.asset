@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec585d8d4ecb7648808d05a33908a72, type: 3}
+  m_Name: EasyWaveConfig
+  m_EditorClassIdentifier: 
+  enemies:
+  - enemyPrefab: {fileID: 3257773929146975376, guid: ecef4196943b0dc4aa5bdb28fb4d95a3, type: 3}
+    spawnReferencePosition: {x: 8, y: 6, z: 0}
+    useSpecificXPosition: 0
+    config: {fileID: 11400000, guid: ea5f321d4da685546b5fe3a4a88ed342, type: 2}
+  - enemyPrefab: {fileID: 3761261581138547287, guid: 15fef2db3560f8940812a9524f8a7acd, type: 3}
+    spawnReferencePosition: {x: 8, y: 6, z: 0}
+    useSpecificXPosition: 0
+    config: {fileID: 11400000, guid: 9a048e2db0d73d944ab3e95e2c2a4a9e, type: 2}
+  - enemyPrefab: {fileID: 3761261581138547287, guid: 0055aa2b14d23e9419db594de825f302, type: 3}
+    spawnReferencePosition: {x: 8, y: 6, z: 0}
+    useSpecificXPosition: 0
+    config: {fileID: 11400000, guid: 9a048e2db0d73d944ab3e95e2c2a4a9e, type: 2}
+  - enemyPrefab: {fileID: 3761261581138547287, guid: 0055aa2b14d23e9419db594de825f302, type: 3}
+    spawnReferencePosition: {x: 8, y: 6, z: 0}
+    useSpecificXPosition: 0
+    config: {fileID: 11400000, guid: 9a048e2db0d73d944ab3e95e2c2a4a9e, type: 2}
+  - enemyPrefab: {fileID: 3761261581138547287, guid: 15fef2db3560f8940812a9524f8a7acd, type: 3}
+    spawnReferencePosition: {x: 8, y: 6, z: 0}
+    useSpecificXPosition: 0
+    config: {fileID: 11400000, guid: b00a41f1c4bb964458a8e6fbb6497d98, type: 2}
+  - enemyPrefab: {fileID: 3761261581138547287, guid: 0055aa2b14d23e9419db594de825f302, type: 3}
+    spawnReferencePosition: {x: 8, y: 6, z: 0}
+    useSpecificXPosition: 0
+    config: {fileID: 11400000, guid: be5faee665e77f14ab181fbd07e31842, type: 2}
+  - enemyPrefab: {fileID: 3761261581138547287, guid: 0055aa2b14d23e9419db594de825f302, type: 3}
+    spawnReferencePosition: {x: 8, y: 6, z: 0}
+    useSpecificXPosition: 0
+    config: {fileID: 11400000, guid: b00a41f1c4bb964458a8e6fbb6497d98, type: 2}
+  - enemyPrefab: {fileID: 3761261581138547287, guid: 15fef2db3560f8940812a9524f8a7acd, type: 3}
+    spawnReferencePosition: {x: 8, y: 6, z: 0}
+    useSpecificXPosition: 0
+    config: {fileID: 11400000, guid: b00a41f1c4bb964458a8e6fbb6497d98, type: 2}
+  - enemyPrefab: {fileID: 3257773929146975376, guid: ecef4196943b0dc4aa5bdb28fb4d95a3, type: 3}
+    spawnReferencePosition: {x: 8, y: 6, z: 0}
+    useSpecificXPosition: 0
+    config: {fileID: 11400000, guid: ea5f321d4da685546b5fe3a4a88ed342, type: 2}
+  cadence: 1
