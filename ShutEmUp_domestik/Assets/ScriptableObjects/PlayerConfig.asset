@@ -19,3 +19,7 @@ MonoBehaviour:
     cannonAmount: 2
   - powerValue: 30
     cannonAmount: 3
+  - powerValue: 40
+    cannonAmount: 4
+  - powerValue: 50
+    cannonAmount: 5

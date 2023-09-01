@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86eda968e7e2f6340b17bb883d893027, type: 3}
-  m_Name: Player Shooting config
+  m_Script: {fileID: 11500000, guid: 1159002f36f85034f878878fd3be550f, type: 3}
+  m_Name: PlayerBulletConfig
   m_EditorClassIdentifier: 
-  shootInitialWaitTime: 0
-  shootCadence: 0.4
-  waitPerShootings: 0
-  shootsAmount: 3
-  waitTimePerShootings: 0
-  autoShooting: 1
+  damage: 1
+  speed: 5

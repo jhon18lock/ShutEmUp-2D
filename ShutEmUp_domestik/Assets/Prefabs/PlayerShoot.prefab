@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5491494754932738689}
   - component: {fileID: -2939455945372725262}
   - component: {fileID: 7736086064704895603}
-  - component: {fileID: 1651144718644082535}
+  - component: {fileID: 4726093261688981958}
   m_Layer: 9
   m_Name: PlayerShoot
   m_TagString: Bullet
@@ -114,15 +114,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 472c5b8432df8b54789d3493e1101716, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mover: {fileID: 6361085328729588301}
-  damage: 1
-  speed: 5
   alwaysActions:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1651144718644082535}
-        m_TargetAssemblyTypeName: DisableObject, Assembly-CSharp
-        m_MethodName: DesactivarObjeto
+      - m_Target: {fileID: 4726093261688981958}
+        m_TargetAssemblyTypeName: DestroyObject, Assembly-CSharp
+        m_MethodName: DoDestroy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -132,6 +129,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  IsEnabled: 1
+  mover: {fileID: 6361085328729588301}
+  config: {fileID: 11400000, guid: 35f655bc3ba75fb47879064d66febb69, type: 2}
   unignoredActions:
     m_PersistentCalls:
       m_Calls:
@@ -149,7 +149,7 @@ MonoBehaviour:
         m_CallState: 2
   tagsToIgnore:
   - Limits
---- !u!114 &1651144718644082535
+--- !u!114 &4726093261688981958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6361085328729588300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a006ed4207b608647b2e28b12ec03cf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d75880ae2cc9a74fb58a4a4599123e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   destroyByTime: 0

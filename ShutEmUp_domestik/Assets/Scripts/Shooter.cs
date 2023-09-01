@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Shooter : MonoBehaviour
@@ -35,17 +35,8 @@ public class Shooter : MonoBehaviour
     {
         if (IsEnabled)
         {
+             ObjectPoolManager.SpawnObject(shootPrefab, transform.position, transform.rotation);
 
-            GameObject bullet = ObjectPoolManager.SpawnObject(shootPrefab, transform.position, transform.rotation);
-
-            if( bullet.TryGetComponent<Bullet>(out Bullet b))
-            {
-                b.damage = config.damage;
-                b.Mover.speed = config.speed;
-            }
-
-
-            //obtener un ObjectPooling bullet
         }
     }
 

@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DisableObject : MonoBehaviour
+public class DestroyObject : MonoBehaviour
 {
     Coroutine returnToPoolTimerCoroutine;
     [SerializeField] bool destroyByTime;
     [SerializeField] float destroyTime = 7f;
-
+    public void DoDestroy()
+    {
+        ObjectPoolManager.ReturnObjectToPool(this.gameObject);
+    }
 
     private void OnEnable()
     {
@@ -18,17 +21,12 @@ public class DisableObject : MonoBehaviour
         }
     }
 
-    public void DesactivarObjeto()
-    {
-        ObjectPoolManager.ReturnObjectToPool(this.gameObject);
-    }
-
 
     IEnumerator ReturnToPoolAfterTime()
     {
         float elapsedTime = 0f;
 
-        while(elapsedTime < destroyTime)
+        while (elapsedTime < destroyTime)
         {
             elapsedTime += Time.deltaTime;
             yield return null;

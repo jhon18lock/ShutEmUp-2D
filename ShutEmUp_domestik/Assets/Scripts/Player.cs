@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
 
 
     [SerializeField] PlayerConfig config;
+
     [SerializeField] SpecialsController specialsController;
 
     //referencia para desactivar collider
@@ -36,8 +37,6 @@ public class Player : MonoBehaviour
     int powerLevel;
     int unlockedCannons = 1;
 
-    float cooldownShootTime = 0f;
-    public float timeToNextShoot = .9f;
 
     // Start is called before the first frame update
     void Start()
@@ -49,10 +48,13 @@ public class Player : MonoBehaviour
         //suscribirse a eventos
         InputProvider.OnHasShoot += OnHasShoot;
         InputProvider.OnDirection += OnDirection;
+
     }
 
 
     //suscrito a inputProvider
+
+    // activar algun power up
     private void OnHasShoot()
     {
         //instanciar desde un punto especifico(shootOrigin
@@ -79,6 +81,7 @@ public class Player : MonoBehaviour
         //    shooter.DoShoot();
         //}
 
+        /*
         if (cooldownShootTime > timeToNextShoot)
         {
             cooldownShootTime = 0f;
@@ -89,7 +92,7 @@ public class Player : MonoBehaviour
                 shooter.DoShoot();
             }
         }
-
+        */
 
     }
 
@@ -98,6 +101,7 @@ public class Player : MonoBehaviour
     {
         moverComponent.direction = direction;
     }
+
 
 
     //lo envia gameController, que recibe de enemycontroller
@@ -170,7 +174,5 @@ public class Player : MonoBehaviour
         float y = Mathf.Clamp(transform.position.y, boundary.yMin, boundary.yMax);
         transform.position = new Vector3(x, y);
 
-        // Timer disparo
-        cooldownShootTime += Time.deltaTime;
     }
 }

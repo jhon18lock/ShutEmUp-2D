@@ -76,7 +76,7 @@ public class Spawner : MonoBehaviour
 
         enemyInstance.GetComponent<EnemyController>().config = config;
 
-
+        
 
         //informar eneigo creado
         GameController.Instance.EnemigoCreado();
@@ -95,4 +95,6 @@ public class Spawner : MonoBehaviour
     //    GameController.Instance.EnemigoCreado();
         
     //}
+
+    
 }

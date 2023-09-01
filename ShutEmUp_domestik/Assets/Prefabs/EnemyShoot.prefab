@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2238248681558032337}
   - component: {fileID: 5491494754932738689}
   - component: {fileID: -2939455945372725262}
-  - component: {fileID: 5458535895145427818}
-  - component: {fileID: 3045847652633216117}
+  - component: {fileID: 4067028203851626652}
+  - component: {fileID: 3665993832006540518}
   m_Layer: 6
   m_Name: EnemyShoot
   m_TagString: Untagged
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1750940742320366, guid: ec1383a81f8b26e41bd5795fba065567, type: 3}
---- !u!114 &5458535895145427818
+--- !u!114 &4067028203851626652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,18 +111,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6361085328729588300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 472c5b8432df8b54789d3493e1101716, type: 3}
+  m_Script: {fileID: 11500000, guid: 9682978317eed154f909be09d3b7f476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mover: {fileID: 6361085328729588301}
-  damage: 2
-  speed: 5
   alwaysActions:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3045847652633216117}
-        m_TargetAssemblyTypeName: DisableObject, Assembly-CSharp
-        m_MethodName: DesactivarObjeto
+      - m_Target: {fileID: 3665993832006540518}
+        m_TargetAssemblyTypeName: DestroyObject, Assembly-CSharp
+        m_MethodName: DoDestroy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -132,7 +129,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  unignoredActions:
+  IsEnabled: 1
+  noIgnoreActions:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: -2939455945372725262}
@@ -149,7 +147,7 @@ MonoBehaviour:
         m_CallState: 2
   tagsToIgnore:
   - Limits
---- !u!114 &3045847652633216117
+--- !u!114 &3665993832006540518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +156,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6361085328729588300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a006ed4207b608647b2e28b12ec03cf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d75880ae2cc9a74fb58a4a4599123e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   destroyByTime: 0

@@ -160,9 +160,9 @@ GameObject:
   - component: {fileID: 3067211305040632018}
   - component: {fileID: 8536621081865666880}
   - component: {fileID: 8290158521021068473}
-  - component: {fileID: 727282918533362541}
   - component: {fileID: -610707810808428142}
   - component: {fileID: 7214740740291074194}
+  - component: {fileID: 1194844977024724745}
   m_Layer: 10
   m_Name: PickupShield
   m_TagString: pickup
@@ -240,20 +240,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 6486e07bb62d45842b6fd28f253fc42a, type: 2}
---- !u!114 &727282918533362541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9019539069255748467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a006ed4207b608647b2e28b12ec03cf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyByTime: 0
-  destroyTime: 7
 --- !u!114 &-610707810808428142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,9 +267,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 727282918533362541}
-        m_TargetAssemblyTypeName: DisableObject, Assembly-CSharp
-        m_MethodName: DesactivarObjeto
+      - m_Target: {fileID: 1194844977024724745}
+        m_TargetAssemblyTypeName: DestroyObject, Assembly-CSharp
+        m_MethodName: DoDestroy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -297,7 +283,7 @@ MonoBehaviour:
   limitsActions:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 727282918533362541}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DisableObject, Assembly-CSharp
         m_MethodName: DesactivarObjeto
         m_Mode: 1
@@ -331,6 +317,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1194844977024724745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9019539069255748467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d75880ae2cc9a74fb58a4a4599123e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyByTime: 0
+  destroyTime: 7
 --- !u!1001 &6920314500099042803
 PrefabInstance:
   m_ObjectHideFlags: 0

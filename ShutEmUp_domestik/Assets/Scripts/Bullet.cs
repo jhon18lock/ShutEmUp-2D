@@ -3,27 +3,34 @@ using UnityEngine;
 
 using UnityEngine.Events;
 
-public class Bullet : MonoBehaviour
+public class Bullet : OnTriggerEnterDo
 {
     [SerializeField] Mover mover;
 
-    public float damage;
+    [SerializeField] BulletConfig config;
 
-    public float speed = 5f;
 
     //[SerializeField] private UnityEvent alwaysActions;
-    [SerializeField] private UnityEvent alwaysActions;
+    //[SerializeField] private UnityEvent alwaysActions;
 
     [SerializeField] private UnityEvent unignoredActions;
 
     [SerializeField] List<string> tagsToIgnore;
 
 
-    public Mover Mover { get { return mover; } set { mover = value; } }
+    //public Mover Mover { get { return mover; } set { mover = value; } }
 
+    private void Start()
+    {
+        if(config != null)
+        {
+            mover.speed = config.speed;
+
+        }
+    }
 
     //protected OVERRIDE, sobreescribir metodo heredado
-    void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
 
         //ejecutar siempre
@@ -42,7 +49,7 @@ public class Bullet : MonoBehaviour
 
         if (collision.TryGetComponent<HealthController>(out HealthController hc))
         {
-            hc.OnDamage(damage);
+            hc.OnDamage(config.damage);
         }
 
     }

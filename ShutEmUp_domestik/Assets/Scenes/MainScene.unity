@@ -13103,42 +13103,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerTest
       objectReference: {fileID: 0}
-    - target: {fileID: 693863292370368588, guid: 53ee0e53fa0e70942aa5407a48ab072a, type: 3}
-      propertyPath: health
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 693863292370368588, guid: 53ee0e53fa0e70942aa5407a48ab072a, type: 3}
-      propertyPath: onZeroHealthActions.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 693863292370368588, guid: 53ee0e53fa0e70942aa5407a48ab072a, type: 3}
-      propertyPath: onZeroHealthActions.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 693863292370368588, guid: 53ee0e53fa0e70942aa5407a48ab072a, type: 3}
-      propertyPath: onZeroHealthActions.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+    - target: {fileID: 693863290905398358, guid: 53ee0e53fa0e70942aa5407a48ab072a, type: 3}
+      propertyPath: shootingConfig
       value: 
-      objectReference: {fileID: 2117366645}
-    - target: {fileID: 693863292370368588, guid: 53ee0e53fa0e70942aa5407a48ab072a, type: 3}
-      propertyPath: onZeroHealthActions.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 693863292370368588, guid: 53ee0e53fa0e70942aa5407a48ab072a, type: 3}
-      propertyPath: onZeroHealthActions.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: set_enabled
-      objectReference: {fileID: 0}
-    - target: {fileID: 693863292370368588, guid: 53ee0e53fa0e70942aa5407a48ab072a, type: 3}
-      propertyPath: onZeroHealthActions.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.Behaviour, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 693863292370368588, guid: 53ee0e53fa0e70942aa5407a48ab072a, type: 3}
-      propertyPath: onZeroHealthActions.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 693863292370368588, guid: 53ee0e53fa0e70942aa5407a48ab072a, type: 3}
-      propertyPath: onZeroHealthActions.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 1397f99ef7c9e4b40b2df8599e75e6e9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53ee0e53fa0e70942aa5407a48ab072a, type: 3}
 --- !u!1 &1999374517
@@ -13377,8 +13345,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &2117366645 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 1801947883937449172, guid: 53ee0e53fa0e70942aa5407a48ab072a, type: 3}
-  m_PrefabInstance: {fileID: 1998619171}
-  m_PrefabAsset: {fileID: 0}

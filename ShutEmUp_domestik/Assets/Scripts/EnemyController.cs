@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -30,17 +30,21 @@ public class EnemyController : MonoBehaviour
             spriteRend.sprite = config.sprite;
         }
 
-        // obtener shooters
-        shooters = GetComponentsInChildren<Shooter>();
-
-        if (shooters != null && shooters.Length > 0)
+        // SI es shooter obtener shooters
+        if(config != null && config.isShooter)
         {
-            foreach (var shooter in shooters)
-            {
+            shooters = GetComponentsInChildren<Shooter>();
 
-                shooterCoroutine = StartCoroutine(ShootForever(shooter));
+            if (shooters != null && shooters.Length > 0)
+            {
+                foreach (var shooter in shooters)
+                {
+
+                    shooterCoroutine = StartCoroutine(ShootForever(shooter));
+                }
             }
         }
+        
 
     }
 
@@ -133,8 +137,4 @@ public class EnemyController : MonoBehaviour
         GameController.Instance.MuertePorLimites();
     }
 
-    public void DesactivarEnemigo()
-    {
-        ObjectPoolManager.ReturnEnemyToPool(this);
-    }
 }

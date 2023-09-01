@@ -100,8 +100,7 @@ GameObject:
   - component: {fileID: 8916738310988007191}
   - component: {fileID: 5524786463482965215}
   - component: {fileID: 2176512187829991501}
-  - component: {fileID: 6227923147991444379}
-  - component: {fileID: -4619196214583598058}
+  - component: {fileID: -3854510340725397062}
   m_Layer: 6
   m_Name: EnemyDroneShoot
   m_TagString: Untagged
@@ -221,9 +220,9 @@ MonoBehaviour:
   onZeroHealthActions:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8916738310988007191}
-        m_TargetAssemblyTypeName: EnemyController, Assembly-CSharp
-        m_MethodName: DesactivarEnemigo
+      - m_Target: {fileID: -3854510340725397062}
+        m_TargetAssemblyTypeName: DestroyObject, Assembly-CSharp
+        m_MethodName: DoDestroy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -287,7 +286,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 3761261580857651820}
   timeToBack: 0.2
   tintColor: {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &6227923147991444379
+--- !u!114 &-3854510340725397062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -296,72 +295,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3761261581138547287}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a006ed4207b608647b2e28b12ec03cf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d75880ae2cc9a74fb58a4a4599123e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   destroyByTime: 0
   destroyTime: 7
---- !u!114 &-4619196214583598058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3761261581138547287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9682978317eed154f909be09d3b7f476, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alwaysActions:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8916738310988007191}
-        m_TargetAssemblyTypeName: EnemyController, Assembly-CSharp
-        m_MethodName: DesactivarEnemigo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  IsEnabled: 1
-  fxActions:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3761261581138547284}
-        m_TargetAssemblyTypeName: Instantiator, Assembly-CSharp
-        m_MethodName: DoInstantiate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  limitsActions:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8916738310988007191}
-        m_TargetAssemblyTypeName: EnemyController, Assembly-CSharp
-        m_MethodName: MuertePorLimites
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  tagBullet: Bullet
-  tagLimit: Limits
-  healthController: {fileID: 5524786463482965215}
 --- !u!1 &7084689466395449990
 GameObject:
   m_ObjectHideFlags: 0
